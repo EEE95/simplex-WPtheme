@@ -90,3 +90,31 @@ Stack trace:
 [29-Nov-2024 11:54:32 UTC] PHP Deprecated:  File Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in C:\Users\eellg\Local Sites\simplex\app\public\wp-includes\functions.php on line 6114
 [29-Nov-2024 11:54:38 UTC] PHP Deprecated:  File Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in C:\Users\eellg\Local Sites\simplex\app\public\wp-includes\functions.php on line 6114
 [29-Nov-2024 11:56:12 UTC] PHP Deprecated:  File Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in C:\Users\eellg\Local Sites\simplex\app\public\wp-includes\functions.php on line 6114
+[29-Nov-2024 13:27:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function simplex_content_nav() in C:\Users\eellg\Local Sites\simplex\app\public\wp-content\themes\simplex\index.php:23
+Stack trace:
+#0 C:\Users\eellg\Local Sites\simplex\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\eellg\Local Sites\simplex\app\public\wp-blog-header.php(19): require_once('C:\\Users\\eellg\\...')
+#2 C:\Users\eellg\Local Sites\simplex\app\public\index.php(17): require('C:\\Users\\eellg\\...')
+#3 {main}
+  thrown in C:\Users\eellg\Local Sites\simplex\app\public\wp-content\themes\simplex\index.php on line 23
+[29-Nov-2024 13:28:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function simplex_content_nav() in C:\Users\eellg\Local Sites\simplex\app\public\wp-content\themes\simplex\index.php:23
+Stack trace:
+#0 C:\Users\eellg\Local Sites\simplex\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\eellg\Local Sites\simplex\app\public\wp-blog-header.php(19): require_once('C:\\Users\\eellg\\...')
+#2 C:\Users\eellg\Local Sites\simplex\app\public\index.php(17): require('C:\\Users\\eellg\\...')
+#3 {main}
+  thrown in C:\Users\eellg\Local Sites\simplex\app\public\wp-content\themes\simplex\index.php on line 23
+[29-Nov-2024 13:28:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function simplex_content_nav() in C:\Users\eellg\Local Sites\simplex\app\public\wp-content\themes\simplex\index.php:23
+Stack trace:
+#0 C:\Users\eellg\Local Sites\simplex\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\eellg\Local Sites\simplex\app\public\wp-blog-header.php(19): require_once('C:\\Users\\eellg\\...')
+#2 C:\Users\eellg\Local Sites\simplex\app\public\index.php(17): require('C:\\Users\\eellg\\...')
+#3 {main}
+  thrown in C:\Users\eellg\Local Sites\simplex\app\public\wp-content\themes\simplex\index.php on line 23
+[29-Nov-2024 13:29:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function simplex_content_nav() in C:\Users\eellg\Local Sites\simplex\app\public\wp-content\themes\simplex\index.php:23
+Stack trace:
+#0 C:\Users\eellg\Local Sites\simplex\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\eellg\Local Sites\simplex\app\public\wp-blog-header.php(19): require_once('C:\\Users\\eellg\\...')
+#2 C:\Users\eellg\Local Sites\simplex\app\public\index.php(17): require('C:\\Users\\eellg\\...')
+#3 {main}
+  thrown in C:\Users\eellg\Local Sites\simplex\app\public\wp-content\themes\simplex\index.php on line 23

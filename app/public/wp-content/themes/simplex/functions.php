@@ -6,10 +6,14 @@
  * are used in the theme as custom template tags. Others are attached to action and
  * filter hooks in WordPress to change core functionality.
  *
- * @package WordPress
- * @subpackage simpleX
- * @since simpleX 2.0
  */
+
+/* style.css added to all pages */
+function simplex_enqueue_styles() {
+    wp_enqueue_style( 'simplex-style', get_stylesheet_uri() );
+}
+add_action( 'wp_enqueue_scripts', 'simplex_enqueue_styles' );
+
 
 /**
  * Set the content width based on the theme's design and stylesheet.

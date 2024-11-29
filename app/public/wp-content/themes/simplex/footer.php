@@ -5,24 +5,16 @@
  * Contains the closing of the id=main div and all content after
  *
  */
- 
- $url = "http://wpshoppe.com";
 ?>
 
-	</div><!-- #main -->
-	
-	<?php do_action( 'simplex_before_footer' ); ?>
+</div><!-- #main -->
 
-	<footer id="colophon" role="contentinfo">
-		<div id="site-generator">
-			<?php do_action( 'simplex_credits' ); ?>
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'simplex' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'simplex' ); ?>" rel="generator"><?php printf( __( 'Powered by %s', 'simplex' ), 'WordPress' ); ?></a> &amp;	<a href="<?php echo esc_url( __( 'http://wpshoppe.com/', 'simplex' ) ); ?>" title="<?php esc_attr_e( 'Minimalist WordPress Themes', 'simplex' ); ?>" rel="generator">simpleX</a>.
-					
-		</div>
-	</footer><!-- #colophon -->
-	
-	<?php do_action( 'simplex_after_footer' ); ?>
-	
+<footer id="colophon" role="contentinfo">
+    <div id="site-generator">
+        <p>&copy; <?php echo date('Y'); ?> Dit Websted. Alle rettigheder forbeholdes.</p>
+    </div>
+</footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
