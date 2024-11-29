@@ -1,6 +1,6 @@
 <?php
 /**
- * The header for the simplex theme
+ * The header for the simpleX theme
  *
  * @package simpleX
  */
@@ -19,21 +19,25 @@
 <body <?php body_class(); ?>>
 
     <header>
-        <!-- Here you can add logo and navigation -->
+        <!-- Header Section with Logo and Navigation -->
         <div id="header">
-            <div id="logo">
+            <div class="logo">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Placeholder Logo">
+                    <?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
+                        the_custom_logo();
+                    } else { ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Placeholder Logo">
+                    <?php } ?>
                 </a>
             </div>
+
             <nav>
                 <?php
                     wp_nav_menu( array(
-                        'theme_location' => 'primary', // If you have registered a menu
+                        'theme_location' => 'primary', // Register your primary menu
                         'menu_id'        => 'primary-menu',
                     ) );
                 ?>
             </nav>
         </div>
     </header>
-

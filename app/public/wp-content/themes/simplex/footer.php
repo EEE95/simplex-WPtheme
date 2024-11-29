@@ -1,9 +1,8 @@
 <?php
 /**
- * The footer.
+ * The footer for the simpleX theme
  *
- * Contains the closing of the id=main div and all content after
- *
+ * @package simpleX
  */
 ?>
 
@@ -11,41 +10,44 @@
 
 <footer>
     <div id="footer-container">
-        
         <div class="footer-row footer-top">
-            <!-- Navigation -->
+            <!-- Footer Navigation -->
             <div class="footer-column footer-nav">
-                <h3>Quick links</h3>
+                <h3><?php echo get_theme_mod( 'footer_other_heading', 'Quick Links' ); ?></h3>
                 <?php
                 wp_nav_menu( array(
-                    'theme_location' => 'footer', 
+                    'theme_location' => 'footer', // Footer menu location
                     'menu_id'        => 'footer-menu',
                     'container'      => false,
                 ) );
                 ?>
             </div>
 
-            <!-- Logo -->
-            <div class="footer-column footer-logo">
+            <!-- Footer Logo -->
+            <div class="footer-column logo">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Placeholder Logo">
+                    <?php if ( get_theme_mod( 'footer_logo' ) ) { ?>
+                        <img src="<?php echo esc_url( get_theme_mod( 'footer_logo' ) ); ?>" alt="Footer Logo">
+                    <?php } else { ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Placeholder Logo">
+                    <?php } ?>
                 </a>
             </div>
 
-            <!-- Contact Info -->
+            <!-- Contact Info Section -->
             <div class="footer-column footer-contact">
-                <h3>Contact</h3>
+                <h3><?php echo get_theme_mod( 'footer_contact_heading', 'Contact' ); ?></h3>
                 <ul>
-                    <li>Email: <a href="mailto:info@yourwebsite.dk">info@yourwebsite.dk</a></li>
-                    <li>Telefon: +45 12 34 56 78</li>
-                    <li>Adresse: adress 42, 1234 City</li>
+                    <li>Email: <a href="mailto:<?php echo get_theme_mod( 'footer_contact_email', 'info@yourwebsite.dk' ); ?>"><?php echo get_theme_mod( 'footer_contact_email', 'info@yourwebsite.dk' ); ?></a></li>
+                    <li>Telefon: <?php echo get_theme_mod( 'footer_contact_phone', '+45 12 34 56 78' ); ?></li>
+                    <li>Adresse: <?php echo get_theme_mod( 'footer_contact_address', 'Address 42, 1234 City' ); ?></li>
                 </ul>
             </div>
         </div>
 
-        <!-- Copyright -->
+        <!-- Copyright Section -->
         <div class="footer-row footer-bottom">
-            <p>&copy; <?php echo date( 'Y' ); ?> - Your Website. All rights reserved.</p>
+            <p>&copy; <?php echo date( 'Y' ); ?> - <?php bloginfo( 'name' ); ?>. All rights reserved.</p>
         </div>
     </div>
 

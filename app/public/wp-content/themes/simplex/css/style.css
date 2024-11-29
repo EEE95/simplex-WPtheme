@@ -71,7 +71,7 @@ nav #primary-menu li a:hover {
 #footer-container {
   background-color: rgba(0, 0, 0, 0.2);
   color: #010101;
-  padding: 20px 15px;
+  padding: 10px 15px;
 }
 #footer-container .footer-row {
   display: flex;
