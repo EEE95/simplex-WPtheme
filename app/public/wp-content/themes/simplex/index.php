@@ -5,7 +5,7 @@
  * @package simpleX
  */
 
-get_header(); // Indsætter header.php
+get_header(); 
 ?>
 
 <main id="main-content">
@@ -13,7 +13,7 @@ get_header(); // Indsætter header.php
     <p>Dette er hovedindholdet på din side.</p>
 
     <?php
-    // Indsæt WordPress Loop for at vise indhold/dynamisk data
+    // WordPress Loop to show dynamic data 
     if ( have_posts() ) :
         while ( have_posts() ) : the_post();
             the_title( '<h2>', '</h2>' );
@@ -26,5 +26,5 @@ get_header(); // Indsætter header.php
 </main>
 
 <?php
-get_footer(); // Indsætter footer.php
+get_footer(); 
 ?>

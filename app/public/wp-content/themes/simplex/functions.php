@@ -10,9 +10,21 @@
 
 /* style.css added to all pages */
 function simplex_enqueue_styles() {
-    wp_enqueue_style( 'simplex-style', get_stylesheet_uri() );
+    wp_enqueue_style( 'simplex-style', get_template_directory_uri() . '/css/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'simplex_enqueue_styles' );
+
+/* Register footer menu*/
+function simplex_register_menus() {
+    register_nav_menus(
+        array(
+            'primary' => __( 'Primary Menu', 'simplex' ),
+            'footer'  => __( 'Footer Menu', 'simplex' ),
+        )
+    );
+}
+add_action( 'after_setup_theme', 'simplex_register_menus' );
+
 
 
 /**
