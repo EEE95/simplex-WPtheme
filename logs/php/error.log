@@ -118,3 +118,6 @@ Stack trace:
 #2 C:\Users\eellg\Local Sites\simplex\app\public\index.php(17): require('C:\\Users\\eellg\\...')
 #3 {main}
   thrown in C:\Users\eellg\Local Sites\simplex\app\public\wp-content\themes\simplex\index.php on line 23
+[29-Nov-2024 15:08:05 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\eellg\Local Sites\simplex\app\public\wp-includes\class-wp-customize-widgets.php on line 923
+[29-Nov-2024 15:19:58 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\eellg\Local Sites\simplex\app\public\wp-includes\class-wp-customize-widgets.php on line 923
+[29-Nov-2024 15:53:42 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\eellg\Local Sites\simplex\app\public\wp-includes\class-wp-customize-widgets.php on line 923
