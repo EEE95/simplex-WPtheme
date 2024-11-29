@@ -7,7 +7,7 @@
  * @since simpleX 2.0
  */
 
-get_header(); ?>
+get_header(); ?> 
 
 	<div id="primary">
 		<div id="content" role="main">

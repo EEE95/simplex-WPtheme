@@ -15,3 +15,4 @@
 [29-Nov-2024 10:29:04 UTC] PHP Deprecated:  Function add_custom_image_header is <strong>deprecated</strong> since version 3.4.0! Use add_theme_support( 'custom-header', $args ) instead. in C:\Users\eellg\Local Sites\simplex\app\public\wp-includes\functions.php on line 6114
 [29-Nov-2024 10:29:05 UTC] PHP Deprecated:  Function add_custom_background is <strong>deprecated</strong> since version 3.4.0! Use add_theme_support( 'custom-background', $args ) instead. in C:\Users\eellg\Local Sites\simplex\app\public\wp-includes\functions.php on line 6114
 [29-Nov-2024 10:29:05 UTC] PHP Deprecated:  Function add_custom_image_header is <strong>deprecated</strong> since version 3.4.0! Use add_theme_support( 'custom-header', $args ) instead. in C:\Users\eellg\Local Sites\simplex\app\public\wp-includes\functions.php on line 6114
+ 
