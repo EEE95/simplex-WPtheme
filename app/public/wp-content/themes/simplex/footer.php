@@ -4,9 +4,6 @@
  *
  * Contains the closing of the id=main div and all content after
  *
- * @package WordPress
- * @subpackage simpleX
- * @since simpleX 2.0
  */
  
  $url = "http://wpshoppe.com";

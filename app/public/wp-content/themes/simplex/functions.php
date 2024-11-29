@@ -46,27 +46,15 @@ if ( ! function_exists( 'simplex_setup' ) ):
  */
 function simplex_setup() {
 
-	/* Make simpleX available for translation.
-	 * Translations can be added to the /languages/ directory.
-	 * If you're building a theme based on simpleX, use a find and replace
-	 * to change 'simplex' to the name of your theme in all the template files.
-	 */
-	load_theme_textdomain( 'simplex', get_template_directory() . '/lib/languages' );
-
-	$locale = get_locale();
-	$locale_file = get_template_directory() . "/lib/languages/$locale.php";
-	if ( is_readable( $locale_file ) )
-		require_once( $locale_file );
-
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
 
 	// Grab simpleX inc files.
-	require( get_template_directory() . '/lib/inc/widgets.php' );
-	require( get_template_directory() . '/lib/inc/body.php' );
-	require( get_template_directory() . '/lib/inc/posts.php' );
-	require( get_template_directory() . '/lib/inc/comments.php' );
-	require( get_template_directory() . '/lib/inc/postnav.php' );
+	require( get_template_directory() . '/assets/inc/widgets.php' );
+	require( get_template_directory() . '/assets/inc/body.php' );
+	require( get_template_directory() . '/assets/inc/posts.php' );
+	require( get_template_directory() . '/assets/inc/comments.php' );
+	require( get_template_directory() . '/assets/inc/postnav.php' );
 
 
 	
@@ -80,7 +68,7 @@ function simplex_setup() {
 	add_theme_support( 'post-formats', array( 'aside', 'link', 'gallery', 'status', 'quote', 'image' ) );
 
 	// Add support for custom backgrounds
-	add_custom_background();
+	add_theme_support('custom-background');
 
 	// This theme uses Featured Images (also known as post thumbnails) for per-post/per-page Custom Header images
 	add_theme_support( 'post-thumbnails' );
@@ -112,7 +100,7 @@ function simplex_setup() {
 
 	// Add a way for the custom header to be styled in the admin panel that controls
 	// custom headers. See simplex_admin_header_style(), below.
-	add_custom_image_header( 'simplex_header_style', 'simplex_admin_header_style', 'simplex_admin_header_image' );
+	add_theme_support( 'simplex_header_style', 'simplex_admin_header_style', 'simplex_admin_header_image' );
 
 	// ... and thus ends the changeable header business.
 
